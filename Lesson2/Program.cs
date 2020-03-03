@@ -6,7 +6,10 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Calculator Calculator = new Calculator();
+            Calculator.Multiply();
+
+            Console.ReadLine();
         }
     }
 }
