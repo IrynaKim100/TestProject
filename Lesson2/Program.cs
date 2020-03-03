@@ -7,7 +7,7 @@ namespace Lesson2
         static void Main(string[] args)
         {
             Calculator Calculator = new Calculator();
-            Calculator.Multiply();
+            Calculator.MultiplyNumbersEnteredByUser();
 
             Console.ReadLine();
         }
