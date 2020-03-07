@@ -11,8 +11,7 @@ namespace Lesson2
             if (inputFromUser > 10 || inputFromUser <= 0)
             {
                 Console.WriteLine("Invalid number");
-                Console.ReadLine();
-                return;
+                Console.ReadLine();            
             }
         }
         public void VerifyInputForLetters(string inputFromUser)

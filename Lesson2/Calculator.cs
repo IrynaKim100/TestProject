@@ -12,16 +12,42 @@ namespace Lesson2
         {
             Console.WriteLine("I wanna calculate something for you, please input the first digit");
             var firstDigit = Console.ReadLine();
+            inputValidator.VerifyInputForLetters(firstDigit);
 
             Console.WriteLine("Please, enter second digit");
             var secondDigit = Console.ReadLine();
-
-            inputValidator.VerifyInputForLetters(firstDigit);
             inputValidator.VerifyInputForLetters(secondDigit);
 
             mathOperations.Multiply(firstDigit, secondDigit);
         }
 
-          
+    public void CalculateSpeed()
+        {
+            Console.WriteLine("Input distance(meters): ");
+            string distance = Console.ReadLine();
+
+            Console.WriteLine("Input timeSec(hour): ");
+            string hours = Console.ReadLine();
+
+            Console.WriteLine("Input timeSec(minutes): ");
+            string minutes = Console.ReadLine();
+
+            Console.WriteLine("Input timeSec(seconds):  ");
+            string seconds = Console.ReadLine();
+
+
+            mathOperations.ShowDistanceAsKilometersPerHours(distance, hours, minutes, seconds);
+            mathOperations.ShowDistanceAsKilometersPerMiles(distance, hours, minutes, seconds);
+           // mathOperations.ShowDistanceAsMetersPerSeconds(distance, hours, minutes, seconds);
+
+
+
+
+
+
+
+        }
+
+
     }
 }
